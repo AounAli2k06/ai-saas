@@ -93,12 +93,8 @@ const CompanionComponent = ({
       clientMessages: ["transcript"],
       serverMessages: [],
     };
-    // @ts-expect-error
-    // TypeScript may complain here because `vapi.start()` expects specific types,
-    // and `configureAssistant(voice, style)` or `assistantOverrides` might not exactly match.
-    // However, this function call works correctly at runtime and has been tested.
-    // Ensure the types align with the Vapi SDK types in future for better safety.
 
+   // @ts-expect-error: voiceId might not exist in this voice-style combo
     vapi.start(configureAssistant(voice, style), assistantOverrides);
   };
 
