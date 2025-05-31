@@ -35,7 +35,7 @@ const SubjectFilter = () => {
             });
         }
         router.push(newUrl, { scroll: false });
-    }, [subject]);
+    }, [subject,router]);
 
     return (
         <Select onValueChange={setSubject} value={subject}>

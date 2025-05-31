@@ -8,7 +8,6 @@ import {
   SignedOut,
 } from "@clerk/nextjs";
 import NavItems from "./NavItems";
-import { Sign } from "crypto";
 
 const Navbar = () => {
   return (

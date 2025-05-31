@@ -3,9 +3,7 @@ import React from "react";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
-  TableFooter,
   TableHead,
   TableHeader,
   TableRow,
@@ -21,7 +19,6 @@ interface CompanionsListProps {
 }
 
 const CompanionsList = ({
-  title,
   companions,
   className,
 }: CompanionsListProps) => {
