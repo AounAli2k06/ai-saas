@@ -103,8 +103,8 @@ export const configureAssistant = (voice: string, style: string): CreateAssistan
         },
       ],
     },
-    clientMessages: ['transcript', 'model-output'],
-    serverMessages: [],
+    // clientMessages: ['transcript', 'model-output'],
+    // serverMessages: [],
   };
 
   return vapiAssistant;
